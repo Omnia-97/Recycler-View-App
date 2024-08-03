@@ -9,16 +9,19 @@ import android.widget.Button;
 
 import com.example.normalrecyclerview.cardview.CardViewActivity;
 import com.example.normalrecyclerview.normalview.NormalRecyclerView;
+import com.example.normalrecyclerview.singlsselection.SingleSelectionRV;
 
 public class MainActivity extends AppCompatActivity {
     Button btn1;
     Button btn2;
+    Button btn3;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btn1 =findViewById(R.id.button);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this , CardViewActivity.class);
+                startActivity(i);
+            }
+        });
+        btn3 = findViewById(R.id.buttonSingleSelection);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this , SingleSelectionRV.class);
                 startActivity(i);
             }
         });
