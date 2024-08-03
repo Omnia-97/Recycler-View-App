@@ -18,6 +18,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_marginLeft="15dp"
-        android:id="@+id/imageviewy"
+        android:id="@+id/imageview_emp"
         android:src="@drawable/ic_tick_point"/>
 </LinearLayout>
