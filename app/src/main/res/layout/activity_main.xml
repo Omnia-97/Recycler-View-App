@@ -64,6 +64,7 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSingleSelection" />
+
     <Button
         android:id="@+id/button_multi_selection"
         android:layout_width="300dp"
@@ -75,5 +76,16 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonMultipleViewType" />
+    <Button
+        android:id="@+id/button_swipe"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="RecyclerView with Swipe items"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_multi_selection" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

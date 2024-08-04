@@ -12,6 +12,7 @@ import com.example.normalrecyclerview.multipleviewtype.MultipleViewType;
 import com.example.normalrecyclerview.multiselection.MultipleSelectionActivity;
 import com.example.normalrecyclerview.normalview.NormalRecyclerView;
 import com.example.normalrecyclerview.singlsselection.SingleSelectionRV;
+import com.example.normalrecyclerview.swipe.SwipeSelectionActivity;
 
 public class MainActivity extends AppCompatActivity {
     Button btn1;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn3;
     Button btn4;
     Button btn5;
+    Button btn6;
 
 
     @Override
@@ -64,6 +66,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, MultipleSelectionActivity.class);
+                startActivity(i);
+            }
+        });
+        btn6 = findViewById(R.id.button_swipe);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, SwipeSelectionActivity.class);
                 startActivity(i);
             }
         });
