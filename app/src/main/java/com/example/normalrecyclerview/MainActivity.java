@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.normalrecyclerview.cardview.CardViewActivity;
 import com.example.normalrecyclerview.multipleviewtype.MultipleViewType;
+import com.example.normalrecyclerview.multiselection.MultipleSelectionActivity;
 import com.example.normalrecyclerview.normalview.NormalRecyclerView;
 import com.example.normalrecyclerview.singlsselection.SingleSelectionRV;
 
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn2;
     Button btn3;
     Button btn4;
+    Button btn5;
 
 
     @Override
@@ -54,6 +56,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, MultipleViewType.class);
+                startActivity(i);
+            }
+        });
+        btn5 = findViewById(R.id.button_multi_selection);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MultipleSelectionActivity.class);
                 startActivity(i);
             }
         });
